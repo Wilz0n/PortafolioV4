@@ -352,7 +352,7 @@ span {
 
 .service-box {
     background-color: var(--main-color);
-    height: 250px;
+    height: 370px;
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease;
@@ -369,7 +369,7 @@ span {
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-height: 242px;
+    max-height: 40rem;
     justify-content: center;
     align-items: center;
     padding: 5rem;
@@ -388,7 +388,7 @@ span {
     margin: auto;
 }
 
-@media (max-width:991px) {
+@media (max-width:1000px) {
     section {
         padding: 10rem 3% 2rem;
     }
