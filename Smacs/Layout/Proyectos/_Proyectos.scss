@@ -1,0 +1,101 @@
+@import './Sliders';
+
+/*Animacion de Proyectos*/
+
+.Proyetos-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    h1 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+.Proyectos-content-son {
+    margin: 2rem;
+    position: relative;
+    bottom: -6rem;
+}
+
+.card {
+    position: relative;
+    right: -3rem;
+    bottom: -3rem;
+    margin-right: 54rem;
+    width: 0rem;
+    height: 50.5rem;
+    .front {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 0px 16px #e9e6e6;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: red;
+        }
+        h3 {
+            position: absolute;
+            bottom: 17px;
+            right: 7.3rem;
+            width: 71%;
+            height: 4rem;
+            line-height: -1rem;
+            color: #fff;
+            background: rgba(0, 0, 0, 1.4);
+            text-align: center;
+        }
+    }
+    .face {
+        position: absolute;
+        width: 51rem;
+        height: 51rem;
+        backface-visibility: hidden;
+        border-radius: 25rem;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .back {
+        transform: perspective(600px) rotateY(180deg);
+        background: rgb(3, 35, 54);
+        padding: 15px;
+        color: #e9e6e6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 0px 16px #e9e6e6;
+    }
+    h3 {
+        font-size: 20px;
+        margin-top: 20px;
+        letter-spacing: 2px;
+    }
+    p {
+        letter-spacing: 1px;
+    }
+    .link {
+        border-top: solid 1px #fff;
+        height: 50px;
+        line-height: 50px;
+        a {
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}

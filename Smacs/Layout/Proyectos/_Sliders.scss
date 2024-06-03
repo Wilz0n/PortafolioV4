@@ -1,0 +1,153 @@
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    padding-bottom: 6rem;
+}
+
+.education-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5rem;
+    width: 100%;
+}
+
+.education-column,
+.experience-column {
+    flex: 0 0 calc(46% - 2.5rem);
+}
+
+.heading{
+    font-size: 5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.spa{
+    color: var(--main-color);
+
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 2.5rem;
+    margin: -6rem -26px -2rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2.8rem -2px 1rem;
+}
+
+.btn-box.btns {
+    display: inline-block;
+    width: 15rem;
+}
+
+.btn-box a::before {
+    background: var(--second-bg-color);
+}
+
+/* Estilos para la sección de educación (Education) */
+
+.education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+.education .education-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.education-row .education-column{
+    flex: 1 1 4rem;
+}
+
+.education-column .title {
+    font-size: 2.5rem;
+    margin: -60px 26px 0.5rem 2rem;
+}
+
+.education-column .education-box {
+    border-left:  .2rem solid var(--main-color);
+}
+
+.education-box .education-content {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.education-box .education-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.education-content .content {
+    position: relative;
+    padding: 3.5rem;
+    border: solid var(--main-color);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.education-content .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.education-content .content:hover::before {
+    width: 100%;
+}
+
+.education-content .content .year {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    margin: -2rem;
+    padding-bottom: 6.2rem;
+}
+
+.education-content .content .year i {
+    padding-right: .5rem;
+}
+
+.education-content .content h3 {
+    font-size: 1.9rem;
+}
+
+.education-content .content p {
+    font-size: 1.5rem;
+    padding-top: 0rem;
+}
+
+@media (max-width: 462px) {
+    .education {
+        padding: 10rem 4% 5rem 5%;
+    }
+}
