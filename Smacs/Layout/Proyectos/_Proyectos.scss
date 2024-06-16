@@ -6,6 +6,8 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+    position: relative;
+    top: 0rem;
 
     h1 {
         font-size: 3rem;
@@ -64,7 +66,7 @@
     }
     .back {
         transform: perspective(600px) rotateY(180deg);
-        background: rgb(3, 35, 54);
+        background: $main-color;
         padding: 15px;
         color: #e9e6e6;
         display: flex;
