@@ -703,132 +703,7 @@ footer .copyright {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-/* about */
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  background: var(--second-bg-color);
-  position: relative;
-  bottom: 25rem;
-}
-.about .heading {
-  font-size: 5rem;
-  margin-bottom: 2.5rem;
-  text-align: center;
-}
-
-.about-content {
-  text-align: center;
-}
-.about-content h3 {
-  font-size: 2.5rem;
-  margin: -6rem -26px -2rem;
-}
-.about-content p {
-  font-size: 1.6rem;
-  margin: 2.8rem -2px 1rem;
-}
-
-/*education*/
-.education {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: auto;
-  padding-bottom: 5rem;
-}
-
-.education-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 5rem;
-  width: 100%;
-}
-.education-row .education-column {
-  flex: 1 1 4rem;
-}
-.education-row .education-column .title {
-  font-size: 2.5rem;
-  margin: -60px 26px 0.5rem 2rem;
-}
-
-.education-column .education-box {
-  border-left: 0.2rem solid var(--main-color);
-}
-.education-column .education-box .education-content {
-  position: relative;
-  padding-left: 2rem;
-}
-.education-column .education-box .education-content .education-content::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -1.1rem;
-  width: 2rem;
-  height: 2rem;
-  background: var(--main-color);
-  border-radius: 50%;
-}
-
-.education-content .content {
-  position: relative;
-  padding: 3.5rem;
-  border: solid var(--main-color);
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-  overflow: hidden;
-}
-.education-content .content .content::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: var(--second-bg-color);
-  z-index: -1;
-  transition: 0.5s;
-}
-.education-content .content .content:hover::before {
-  width: 100%;
-}
-.education-content .content .year {
-  font-size: 1.5rem;
-  color: var(--main-color);
-  margin: -2rem;
-  padding-bottom: 6.2rem;
-}
-.education-content .content .year .year i {
-  padding-right: 0.5rem;
-}
-.education-content .content h3 {
-  font-size: 1.9rem;
-}
-.education-content .content p {
-  font-size: 1.5rem;
-  padding-top: 0rem;
-}
-
-.btn-box.btns {
-  display: inline-block;
-  width: 15rem;
-}
-
-.btn-box a::before {
-  background: var(--second-bg-color);
-}
-
-@media (max-width: 462px) {
-  .education {
-    padding: 10rem 4% 5rem 5%;
-  }
-}
-/*Animacion de Proyectos*/
+/* Descripcion de Proyectos*/
 .Proyetos-content {
   display: flex;
   align-items: center;
@@ -839,9 +714,6 @@ footer .copyright {
 .Proyetos-content h1 {
   font-size: 3rem;
 }
-.Proyetos-content h3 {
-  font-size: 2rem;
-}
 .Proyetos-content p {
   font-size: 1.4rem;
 }
@@ -851,80 +723,128 @@ footer .copyright {
   position: relative;
   bottom: -6rem;
 }
-
-.card {
-  position: relative;
-  right: -3rem;
-  bottom: -3rem;
-  margin-right: 54rem;
-  width: 0rem;
-  height: 50.5rem;
-}
-.card .front {
-  transform: perspective(600px) rotateY(0deg);
-  box-shadow: 0 0px 16px #e9e6e6;
-}
-.card .front img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background: red;
-}
-.card .front h3 {
-  position: absolute;
-  bottom: 17px;
-  right: 7.3rem;
-  width: 71%;
-  height: 4rem;
-  line-height: -1rem;
-  color: #fff;
-  background: rgb(0, 0, 0);
-  text-align: center;
-}
-.card .face {
-  position: absolute;
-  width: 51rem;
-  height: 51rem;
-  backface-visibility: hidden;
-  border-radius: 25rem;
-  overflow: hidden;
-  transition: 0.5s;
-}
-.card .back {
-  transform: perspective(600px) rotateY(180deg);
-  background: #eb1e1e;
-  padding: 15px;
-  color: #e9e6e6;
+.Proyectos-content-son .stags {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  box-shadow: 0 0px 16px #e9e6e6;
 }
-.card h3 {
-  font-size: 20px;
-  margin-top: 20px;
-  letter-spacing: 2px;
+.Proyectos-content-son .stags .stags-content {
+  position: relative;
+  right: 1rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  background: red;
+  border: 0.2rem solid red;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
-.card p {
-  letter-spacing: 1px;
-}
-.card .link {
-  border-top: solid 1px #fff;
-  height: 50px;
-  line-height: 50px;
-}
-.card .link a {
+.Proyectos-content-son .stags .stags-content:hover {
+  background: transparent;
   color: #fff;
-  font-size: 20px;
+  transform: scale(1.03);
+  border: 1px solid #eb1e1e;
+}
+
+/* Social ICONS */
+.social-icon-link a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 13rem;
+  height: 4rem;
+  margin: 2rem 1.5rem 0rem 0;
+  background: transparent;
+  border: 0.2rem solid #eb1e1e;
+  border-radius: 5rem;
+  font-size: 2rem;
+  color: #eb1e1e;
+  transition: 0.3s ease;
+}
+.social-icon-link a:hover {
+  color: white;
+  transform: scale(1.3) translateY(-5px);
+  background: #eb1e1e;
+  box-shadow: 0 0 25px #eb1e1e;
+}
+.social-icon-link i {
+  margin-right: 0.7rem;
+}
+
+/* Animacion de vuelta a moneda 360 */
+/*
+.card {
+    position: relative;
+    right: -3rem;
+    bottom: -3rem;
+    margin-right: 54rem;
+    width: 0rem;
+    height: 50.5rem;
+    .front {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 0px 16px #e9e6e6;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: red;
+        }
+        h3 {
+            position: absolute;
+            bottom: 17px;
+            right: 7.3rem;
+            width: 71%;
+            height: 4rem;
+            line-height: -1rem;
+            color: #fff;
+            background: rgba(0, 0, 0, 1.4);
+            text-align: center;
+        }
+    }
+    .face {
+        position: absolute;
+        width: 51rem;
+        height: 51rem;
+        backface-visibility: hidden;
+        border-radius: 25rem;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .back {
+        transform: perspective(600px) rotateY(180deg);
+        background: $main-color;
+        padding: 15px;
+        color: #e9e6e6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 0px 16px #e9e6e6;
+    }
+    h3 {
+        font-size: 20px;
+        margin-top: 20px;
+        letter-spacing: 2px;
+    }
+    p {
+        letter-spacing: 1px;
+    }
+    .link {
+        border-top: solid 1px #fff;
+        height: 50px;
+        line-height: 50px;
+        a {
+            color: #fff;
+            font-size: 20px;
+        }
+    }
 }
 
 .card:hover .front {
-  transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
 }
 
 .card:hover .back {
-  transform: perspective(600px) rotateY(360deg);
-}/*# sourceMappingURL=styles.css.map */
+    transform: perspective(600px) rotateY(360deg);
+}
+
+*//*# sourceMappingURL=styles.css.map */
