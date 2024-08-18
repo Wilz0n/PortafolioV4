@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 * {
   margin: 0;
@@ -307,9 +308,9 @@ span {
     margin-top: 4rem;
   }
 }
-/*Secciones de Servicios*/
-.services {
-  background: #000000;
+/*Secciones de Proyectos*/
+section {
+  background: #161616;
   padding: 14rem;
   margin-bottom: 1rem;
 }
@@ -318,6 +319,7 @@ span {
   flex-direction: column;
   text-align: center;
   font-size: 5rem;
+  margin-bottom: 3rem;
 }
 
 .services-container {
@@ -703,7 +705,93 @@ footer .copyright {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-/* Descripcion de Proyectos*/
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  margin: 0;
+  position: relative;
+  width: 135%;
+  height: 62rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  z-index: 1;
+}
+.slider .titulo {
+  font-size: 5rem;
+  font-family: monospace;
+  position: relative;
+  top: -20rem;
+  left: 0rem;
+}
+.slider .item {
+  position: absolute;
+  width: 58rem;
+  height: 39rem;
+  text-align: justify;
+  background-size: cover;
+  transition: 0.5s;
+  left: calc(50% - 28rem);
+  top: 16rem;
+}
+.slider .item img {
+  width: 57rem;
+  height: 39rem;
+  border-radius: 2rem 3rem 4rem 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider #next, .slider #prev {
+  position: absolute;
+  top: 57%;
+  color: #fff;
+  background-color: red;
+  border: none;
+  font-size: xxx-large;
+  font-family: monospace;
+  font-weight: bold;
+  left: 1rem;
+  z-index: 2;
+}
+.slider #next {
+  left: unset;
+  right: 1rem;
+}
+
+/* ver solucion del problema
+
+@media (max-width:1020px) {
+    .slider {
+        width: 102%;
+        .item{
+            position: absolute;
+            top: 22rem;
+            img {
+                position: absolute;
+                top: -5rem;
+                width: 56rem;
+                height: 29rem;
+            }
+        }
+
+        #next {
+            position: absolute;
+            border-radius: 1rem;
+            right: 1%;
+            top: 47%;
+        }
+        #prev {
+            position: absolute;
+            border-radius: 1rem;
+            left: 1%;
+            top: 47%;
+        }
+    }
+}
+
+*/
+/* Descripcion de todos los Proyectos*/
 .Proyetos-content {
   display: flex;
   align-items: center;
@@ -716,6 +804,8 @@ footer .copyright {
 }
 .Proyetos-content p {
   font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-right: 4rem;
 }
 
 .Proyectos-content-son {
@@ -761,7 +851,7 @@ footer .copyright {
 }
 .social-icon-link a:hover {
   color: white;
-  transform: scale(1.3) translateY(-5px);
+  transform: scale(1) translateY(-5px);
   background: #eb1e1e;
   box-shadow: 0 0 25px #eb1e1e;
 }
@@ -769,82 +859,61 @@ footer .copyright {
   margin-right: 0.7rem;
 }
 
-/* Animacion de vuelta a moneda 360 */
-/*
-.card {
-    position: relative;
-    right: -3rem;
-    bottom: -3rem;
-    margin-right: 54rem;
-    width: 0rem;
-    height: 50.5rem;
-    .front {
-        transform: perspective(600px) rotateY(0deg);
-        box-shadow: 0 0px 16px #e9e6e6;
-        img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            background: red;
-        }
-        h3 {
-            position: absolute;
-            bottom: 17px;
-            right: 7.3rem;
-            width: 71%;
-            height: 4rem;
-            line-height: -1rem;
-            color: #fff;
-            background: rgba(0, 0, 0, 1.4);
-            text-align: center;
-        }
-    }
-    .face {
-        position: absolute;
-        width: 51rem;
-        height: 51rem;
-        backface-visibility: hidden;
-        border-radius: 25rem;
-        overflow: hidden;
-        transition: 0.5s;
-    }
-    .back {
-        transform: perspective(600px) rotateY(180deg);
-        background: $main-color;
-        padding: 15px;
-        color: #e9e6e6;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
-        box-shadow: 0 0px 16px #e9e6e6;
-    }
-    h3 {
-        font-size: 20px;
-        margin-top: 20px;
-        letter-spacing: 2px;
-    }
-    p {
-        letter-spacing: 1px;
-    }
-    .link {
-        border-top: solid 1px #fff;
-        height: 50px;
-        line-height: 50px;
-        a {
-            color: #fff;
-            font-size: 20px;
-        }
-    }
+@media (max-width: 1600px) {
+  .Proyetos-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .Proyectos-content-son h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+  .Proyectos-content-son .stags {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 5 columnas iguales */
+    grid-template-rows: repeat(3, auto); /* 2 filas automáticas */
+    gap: 10px; /* Espacio entre los divs */
+  }
+  .slider {
+    width: 124%;
+  }
+  .slider #next {
+    position: absolute;
+    border-radius: 1rem;
+    right: 27%;
+    top: 53%;
+  }
+  .slider #prev {
+    position: absolute;
+    border-radius: 1rem;
+    left: 28%;
+    top: 53%;
+  }
 }
-
-.card:hover .front {
-    transform: perspective(600px) rotateY(180deg);
-}
-
-.card:hover .back {
-    transform: perspective(600px) rotateY(360deg);
-}
-
-*//*# sourceMappingURL=styles.css.map */
+@media (max-width: 1020px) {
+  .slider {
+    width: 102%;
+  }
+  .slider .item {
+    position: absolute;
+    top: 22rem;
+  }
+  .slider .item img {
+    position: absolute;
+    top: -5rem;
+    width: 56rem;
+    height: 29rem;
+  }
+  .slider #next {
+    position: absolute;
+    border-radius: 1rem;
+    right: 1%;
+    top: 47%;
+  }
+  .slider #prev {
+    position: absolute;
+    border-radius: 1rem;
+    left: 1%;
+    top: 47%;
+  }
+}/*# sourceMappingURL=styles.css.map */

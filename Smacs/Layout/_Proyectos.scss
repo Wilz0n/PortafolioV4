@@ -1,7 +1,7 @@
-/*Secciones de Servicios*/
+/*Secciones de Proyectos*/
 
-.services {
-    background: $color;
+section {
+    background: $second-color;
     padding: 14rem;
     margin-bottom: 1rem;
 }
@@ -10,6 +10,7 @@
     flex-direction: column;
     text-align: center;
     font-size: 5rem;
+    margin-bottom: 3rem;
 }
 .services-container {
     display: grid;

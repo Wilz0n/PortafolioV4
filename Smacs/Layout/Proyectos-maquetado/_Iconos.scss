@@ -1,0 +1,143 @@
+@import './Sliders';
+
+/* Descripcion de todos los Proyectos*/
+
+.Proyetos-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    top: 0rem;
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        margin-right: 4rem;
+    }
+}
+
+.Proyectos-content-son {
+    margin: 2rem;
+    position: relative;
+    bottom: -6rem;
+    .stags {
+    display: flex;
+    .stags-content {
+        position: relative;
+        right: 1rem;
+
+        padding: 1rem;
+        margin-left: 1rem;
+
+        background: red;
+
+        border: 0.2rem solid red;
+        border-radius: 1rem;
+
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .stags-content:hover {
+        background: transparent;
+        color: $text-color;
+        transform: scale(1.03);
+        border: 1px solid $main-color;
+    }
+}
+}
+
+/* Social ICONS */
+
+.social-icon-link {
+    a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 13rem;
+        height: 4rem;
+        margin: 2rem 1.5rem 0rem 0;
+
+        background: transparent;
+        border: 0.2rem solid $main-color;
+        border-radius: 5rem;
+
+        font-size: 2rem;
+        color: $main-color;
+        transition: 0.3s ease;
+    }
+    a:hover {
+        color: white; 
+        transform:  scale(1) translateY(-5px);
+        background: $main-color;
+        box-shadow: 0 0 25px $main-color;
+    }
+    i {
+        margin-right: 0.7rem;
+    }
+}
+
+@media (max-width:1600px) {
+    .Proyetos-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .Proyectos-content-son {
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 3rem;
+        }
+        .stags {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 5 columnas iguales */
+            grid-template-rows: repeat(3, auto); /* 2 filas automáticas */
+            gap: 10px; /* Espacio entre los divs */
+        }
+    }
+    .slider {
+        width: 124%;
+        #next {
+            position: absolute;
+            border-radius: 1rem;
+            right: 27%;
+            top: 53%;
+        }
+        #prev {
+            position: absolute;
+            border-radius: 1rem;
+            left: 28%;
+            top: 53%;
+        }
+    }
+}
+
+@media (max-width:1020px) {
+    .slider {
+        width: 102%;
+        .item{
+            position: absolute;
+            top: 22rem;
+            img {
+                position: absolute;
+                top: -5rem;
+                width: 56rem;
+                height: 29rem;
+            }
+        }
+
+        #next {
+            position: absolute;
+            border-radius: 1rem;
+            right: 1%;
+            top: 47%;
+        }
+        #prev {
+            position: absolute;
+            border-radius: 1rem;
+            left: 1%;
+            top: 47%;
+        }
+    }
+}

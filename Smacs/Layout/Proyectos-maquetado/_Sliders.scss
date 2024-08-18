@@ -1,0 +1,93 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    margin: 0;
+    position: relative;
+    width: 135%;
+    height: 62rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 1;
+    .titulo {
+        font-size: 5rem;
+        font-family: monospace;
+        position: relative;
+        top: -20rem;
+        left: 0rem;
+    }
+    .item {
+        position: absolute;
+        width: 58rem;
+        height: 39rem;
+        text-align: justify;
+        background-size: cover;
+        transition: 0.5s;
+        left: calc(50% - 28rem);
+        top: 16rem;
+        img {
+            width: 57rem;
+            height: 39rem;
+            border-radius: 2rem 3rem 4rem 2rem;
+            object-fit: cover;
+        }
+    }
+    #next, #prev {
+        position: absolute;
+        top: 57%;
+        color: #fff;
+        background-color: red;
+        border: none;
+        font-size: xxx-large;
+        font-family: monospace;
+        font-weight: bold;
+        left: 1rem;
+        z-index: 2;
+    }
+    #next {
+        left: unset;
+        right: 1rem;
+    }
+}
+
+/* ver solucion del problema
+
+@media (max-width:1020px) {
+    .slider {
+        width: 102%;
+        .item{
+            position: absolute;
+            top: 22rem;
+            img {
+                position: absolute;
+                top: -5rem;
+                width: 56rem;
+                height: 29rem;
+            }
+        }
+
+        #next {
+            position: absolute;
+            border-radius: 1rem;
+            right: 1%;
+            top: 47%;
+        }
+        #prev {
+            position: absolute;
+            border-radius: 1rem;
+            left: 1%;
+            top: 47%;
+        }
+    }
+}
+
+*/
+
+
+
+
+
+
+
+
