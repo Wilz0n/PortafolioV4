@@ -1,0 +1,136 @@
+/*Section vinculado a el apartado de _Section wordpress.scss */
+
+/*Parte superior*/
+
+.section-wordpress-box-proceso {
+    background-color: #fff;
+    height: 40rem;
+    width: 35rem;
+    border-radius: 3rem 3rem 0rem 0rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+    bottom: 10rem;
+    .section-wordpress-info-proceso {
+        .img-sub-titulo {
+            img {
+                width: 35rem;
+                height: 24rem;
+                border-radius: 4rem 4rem 0rem 0rem;
+                transition: 0.3s ease;
+            }
+            h3 {
+                background-color: red;
+                width: 10rem;
+                height: 3rem;
+                padding: 0.7rem;
+                padding-left: 1.5rem;
+                position: relative;
+                bottom: 4rem;
+                left: 0rem;
+            }
+        }
+        .titulo-wordpress {
+            h1 {
+                padding: 0.7rem;
+                font-size: 3rem;
+                position: relative;
+                bottom: 4rem;
+                color: black;
+            }
+            h3 {
+                position: relative;
+                bottom: 5rem;
+                left: 1rem;
+                color: black;
+            }
+            .separador {
+                display: inline-block;
+                width: 23rem;
+                height: 0.2rem;
+                background-color: blue;
+                vertical-align: middle;
+                position: relative;
+                bottom: 5rem;
+                left: 1rem;
+            }
+            #next-proceso {
+                position: relative;
+                left: 5rem;
+                top: 1rem;
+                background-color: red;
+                width: 5rem;
+                height: 3rem;
+                color: #fff;
+                font-size: 2rem;
+            }
+        }
+      }
+    }
+/*Parte inferior en caso se agreguen mas y no conincida la posicion (position)*/
+.section-wordpress-box-proceso-2 {
+    background-color: #fff;
+    height: 40rem;
+    width: 35rem;
+    border-radius: 3rem 3rem 0rem 0rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+    bottom: -1rem;
+    .section-wordpress-info-proceso {
+        .img-sub-titulo {
+            img {
+                width: 35rem;
+                height: 24rem;
+                border-radius: 4rem 4rem 0rem 0rem;
+                transition: 0.3s ease;
+            }
+            h3 {
+                background-color: red;
+                width: 10rem;
+                height: 3rem;
+                padding: 0.7rem;
+                padding-left: 1.5rem;
+                position: relative;
+                bottom: 4rem;
+                left: 0rem;
+                border-radius: 0rem 3rem 3rem 0rem;
+            }
+        }
+        .titulo-wordpress {
+            h1 {
+                padding: 0.7rem;
+                font-size: 3rem;
+                position: relative;
+                bottom: 4rem;
+                color: black;
+            }
+            h3 {
+                position: relative;
+                bottom: 5rem;
+                left: 1rem;
+                color: black;
+            }
+            .separador {
+                display: inline-block;
+                width: 23rem;
+                height: 0.2rem;
+                background-color: blue;
+                vertical-align: middle;
+                position: relative;
+                bottom: 5rem;
+                left: 1rem;
+            }
+            #next-proceso {
+                position: relative;
+                left: 5rem;
+                top: 1rem;
+                background-color: red;
+                width: 5rem;
+                height: 3rem;
+                color: #fff;
+                font-size: 2rem;
+            }
+        }
+      }
+}

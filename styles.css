@@ -202,6 +202,7 @@ span {
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
+  margin-right: 1rem;
   background: #000000;
   border-radius: 4rem;
   font-size: 1.6rem;
@@ -306,6 +307,9 @@ span {
   .home-img img {
     width: 70vw;
     margin-top: 4rem;
+  }
+  .btn {
+    margin-bottom: 2rem;
   }
 }
 /*Secciones de Proyectos*/
@@ -726,6 +730,7 @@ footer .copyright {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+/* Descripcion usado en todos los Proyectos */
 .slider {
   display: flex;
   justify-content: center;
@@ -812,7 +817,7 @@ footer .copyright {
 }
 
 */
-/* Descripcion de todos los Proyectos*/
+/* Descripcion usado en todos los Proyectos */
 .Proyetos-content {
   display: flex;
   align-items: center;
@@ -937,4 +942,209 @@ footer .copyright {
     left: 1%;
     top: 47%;
   }
+}
+/*Section especial para Wordpress _Section-wordpress.scss*/
+/*Section vinculado a el apartado de _Section wordpress.scss */
+/*Parte superior*/
+.section-wordpress-box-proceso {
+  background-color: #fff;
+  height: 40rem;
+  width: 35rem;
+  border-radius: 3rem 3rem 0rem 0rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+  bottom: 10rem;
+}
+.section-wordpress-box-proceso .section-wordpress-info-proceso .img-sub-titulo img {
+  width: 35rem;
+  height: 24rem;
+  border-radius: 4rem 4rem 0rem 0rem;
+  transition: 0.3s ease;
+}
+.section-wordpress-box-proceso .section-wordpress-info-proceso .img-sub-titulo h3 {
+  background-color: red;
+  width: 10rem;
+  height: 3rem;
+  padding: 0.7rem;
+  padding-left: 1.5rem;
+  position: relative;
+  bottom: 4rem;
+  left: 0rem;
+}
+.section-wordpress-box-proceso .section-wordpress-info-proceso .titulo-wordpress h1 {
+  padding: 0.7rem;
+  font-size: 3rem;
+  position: relative;
+  bottom: 4rem;
+  color: black;
+}
+.section-wordpress-box-proceso .section-wordpress-info-proceso .titulo-wordpress h3 {
+  position: relative;
+  bottom: 5rem;
+  left: 1rem;
+  color: black;
+}
+.section-wordpress-box-proceso .section-wordpress-info-proceso .titulo-wordpress .separador {
+  display: inline-block;
+  width: 23rem;
+  height: 0.2rem;
+  background-color: blue;
+  vertical-align: middle;
+  position: relative;
+  bottom: 5rem;
+  left: 1rem;
+}
+.section-wordpress-box-proceso .section-wordpress-info-proceso .titulo-wordpress #next-proceso {
+  position: relative;
+  left: 5rem;
+  top: 1rem;
+  background-color: red;
+  width: 5rem;
+  height: 3rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+/*Parte inferior en caso se agreguen mas y no conincida la posicion (position)*/
+.section-wordpress-box-proceso-2 {
+  background-color: #fff;
+  height: 40rem;
+  width: 35rem;
+  border-radius: 3rem 3rem 0rem 0rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+  bottom: -1rem;
+}
+.section-wordpress-box-proceso-2 .section-wordpress-info-proceso .img-sub-titulo img {
+  width: 35rem;
+  height: 24rem;
+  border-radius: 4rem 4rem 0rem 0rem;
+  transition: 0.3s ease;
+}
+.section-wordpress-box-proceso-2 .section-wordpress-info-proceso .img-sub-titulo h3 {
+  background-color: red;
+  width: 10rem;
+  height: 3rem;
+  padding: 0.7rem;
+  padding-left: 1.5rem;
+  position: relative;
+  bottom: 4rem;
+  left: 0rem;
+  border-radius: 0rem 3rem 3rem 0rem;
+}
+.section-wordpress-box-proceso-2 .section-wordpress-info-proceso .titulo-wordpress h1 {
+  padding: 0.7rem;
+  font-size: 3rem;
+  position: relative;
+  bottom: 4rem;
+  color: black;
+}
+.section-wordpress-box-proceso-2 .section-wordpress-info-proceso .titulo-wordpress h3 {
+  position: relative;
+  bottom: 5rem;
+  left: 1rem;
+  color: black;
+}
+.section-wordpress-box-proceso-2 .section-wordpress-info-proceso .titulo-wordpress .separador {
+  display: inline-block;
+  width: 23rem;
+  height: 0.2rem;
+  background-color: blue;
+  vertical-align: middle;
+  position: relative;
+  bottom: 5rem;
+  left: 1rem;
+}
+.section-wordpress-box-proceso-2 .section-wordpress-info-proceso .titulo-wordpress #next-proceso {
+  position: relative;
+  left: 5rem;
+  top: 1rem;
+  background-color: red;
+  width: 5rem;
+  height: 3rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+section {
+  /*section de Hover*/
+}
+section .section-wordpress-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+section .section-wordpress-box {
+  background-color: #fff;
+  height: 60rem;
+  width: 35rem;
+  border-radius: 3rem 3rem 0rem 0rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+section .section-wordpress-box .section-wordpress-info .img-sub-titulo img {
+  width: 35rem;
+  height: 28rem;
+  border-radius: 3rem 3rem 0rem 0rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s ease;
+}
+section .section-wordpress-box .section-wordpress-info .img-sub-titulo h3 {
+  background-color: red;
+  width: 10rem;
+  height: 3rem;
+  padding: 0.7rem;
+  padding-left: 1.5rem;
+  position: relative;
+  bottom: 4rem;
+  left: 0rem;
+  border-radius: 0rem 3rem 3rem 0rem;
+}
+section .section-wordpress-box .section-wordpress-info .titulo-wordpress h1 {
+  padding: 0.7rem;
+  font-size: 3rem;
+  position: relative;
+  bottom: 4rem;
+  color: black;
+}
+section .section-wordpress-box .section-wordpress-info .titulo-wordpress h3 {
+  position: relative;
+  bottom: 5rem;
+  left: 1rem;
+  color: black;
+}
+section .section-wordpress-box .section-wordpress-info .titulo-wordpress .separador {
+  display: inline-block;
+  width: 23rem;
+  height: 0.2rem;
+  background-color: black;
+  vertical-align: middle;
+  position: relative;
+  bottom: 5rem;
+  left: 1rem;
+}
+section .section-wordpress-box .section-wordpress-info .titulo-wordpress p {
+  position: relative;
+  bottom: 6rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: black;
+}
+section .section-wordpress-box .section-wordpress-info .titulo-wordpress #next {
+  position: relative;
+  left: 29rem;
+  top: -3rem;
+  background-color: transparent;
+  width: 5rem;
+  height: 3rem;
+  color: black;
+  font-size: 3rem;
+  cursor: pointer;
+}
+section .section-wordpress-box:hover {
+  background: red;
 }/*# sourceMappingURL=styles.css.map */

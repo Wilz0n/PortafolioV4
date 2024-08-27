@@ -70,6 +70,7 @@ span {
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
+    margin-right: 1rem;
     background: $color;
     border-radius: 4rem;
     font-size: 1.6rem;
@@ -192,4 +193,7 @@ span {
         width: 70vw;
         margin-top: 4rem;
     }
+    .btn {
+        margin-bottom: 2rem;
+    } 
 }
