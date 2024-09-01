@@ -9,10 +9,10 @@ section {
     gap: 2.5rem;
    } 
    .section-wordpress-box {
-    background-color: #fff;
+    background-color: $main-color;
     height: 60rem;
-    width: 35rem;
-    border-radius: 3rem 3rem 0rem 0rem;
+    width: 35.2rem;
+    border-radius: 3rem 3rem 2rem 2rem;
     cursor: pointer;
     transition: 0.3s ease;
 
@@ -22,11 +22,11 @@ section {
                 width: 35rem;
                 height: 28rem;
                 border-radius: 3rem 3rem 0rem 0rem;
-                object-fit: cover;
                 transition: 0.3s ease;
             }
             h3 {
                 background-color: red;
+                color: #fff;
                 width: 10rem;
                 height: 3rem;
                 padding: 0.7rem;
@@ -43,19 +43,19 @@ section {
                 font-size: 3rem;
                 position: relative;
                 bottom: 4rem;
-                color: black
+                color: #fff;
             }
             h3 {
                 position: relative;
                 bottom: 5rem;
                 left: 1rem;
-                color: black
+                color: #fff;
             }
             .separador {
                 display: inline-block;
                 width: 23rem;
                 height: 0.2rem;
-                background-color: black;
+                background-color: #fff;
                 vertical-align: middle;
                 position: relative;
                 bottom: 5rem;
@@ -66,7 +66,7 @@ section {
                 bottom: 6rem;
                 padding: 1rem;
                 font-size: 1.6rem;
-                color: black
+                color: #fff;
             }
             #next {
                 position: relative;
@@ -75,7 +75,7 @@ section {
                 background-color: transparent;
                 width: 5rem;
                 height: 3rem;
-                color: black;
+                color: #fff;
                 font-size: 3rem;
                 cursor: pointer;
           }
@@ -84,7 +84,9 @@ section {
     }
     /*section de Hover*/
     .section-wordpress-box:hover {
-        background: red;
+        background: transparent;
+        transform: scale(1.03);
+        border: 1px solid $main-color;
       }
   }
 

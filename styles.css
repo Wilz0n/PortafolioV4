@@ -1078,10 +1078,10 @@ section .section-wordpress-container {
   gap: 2.5rem;
 }
 section .section-wordpress-box {
-  background-color: #fff;
+  background-color: #eb1e1e;
   height: 60rem;
-  width: 35rem;
-  border-radius: 3rem 3rem 0rem 0rem;
+  width: 35.2rem;
+  border-radius: 3rem 3rem 2rem 2rem;
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -1089,12 +1089,11 @@ section .section-wordpress-box .section-wordpress-info .img-sub-titulo img {
   width: 35rem;
   height: 28rem;
   border-radius: 3rem 3rem 0rem 0rem;
-  -o-object-fit: cover;
-     object-fit: cover;
   transition: 0.3s ease;
 }
 section .section-wordpress-box .section-wordpress-info .img-sub-titulo h3 {
   background-color: red;
+  color: #fff;
   width: 10rem;
   height: 3rem;
   padding: 0.7rem;
@@ -1109,19 +1108,19 @@ section .section-wordpress-box .section-wordpress-info .titulo-wordpress h1 {
   font-size: 3rem;
   position: relative;
   bottom: 4rem;
-  color: black;
+  color: #fff;
 }
 section .section-wordpress-box .section-wordpress-info .titulo-wordpress h3 {
   position: relative;
   bottom: 5rem;
   left: 1rem;
-  color: black;
+  color: #fff;
 }
 section .section-wordpress-box .section-wordpress-info .titulo-wordpress .separador {
   display: inline-block;
   width: 23rem;
   height: 0.2rem;
-  background-color: black;
+  background-color: #fff;
   vertical-align: middle;
   position: relative;
   bottom: 5rem;
@@ -1132,7 +1131,7 @@ section .section-wordpress-box .section-wordpress-info .titulo-wordpress p {
   bottom: 6rem;
   padding: 1rem;
   font-size: 1.6rem;
-  color: black;
+  color: #fff;
 }
 section .section-wordpress-box .section-wordpress-info .titulo-wordpress #next {
   position: relative;
@@ -1141,10 +1140,12 @@ section .section-wordpress-box .section-wordpress-info .titulo-wordpress #next {
   background-color: transparent;
   width: 5rem;
   height: 3rem;
-  color: black;
+  color: #fff;
   font-size: 3rem;
   cursor: pointer;
 }
 section .section-wordpress-box:hover {
-  background: red;
+  background: transparent;
+  transform: scale(1.03);
+  border: 1px solid #eb1e1e;
 }/*# sourceMappingURL=styles.css.map */
