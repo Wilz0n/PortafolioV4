@@ -313,6 +313,10 @@ span {
   }
 }
 /*Secciones de Proyectos*/
+.Proyectos-wordpress {
+  background: #161616;
+}
+
 section {
   background: #161616;
   padding: 14rem;
@@ -390,25 +394,41 @@ section {
   cursor: pointer;
 }
 
-@media (max-width: 1000px) {
-  section {
-    padding: 10rem 3% 2rem;
-  }
-  .services {
-    padding: 0rem;
+/*Responsive de Proyectos*/
+@media (min-width: 1414px) {
+  .Proyectos .button-proyectos {
+    position: relative;
+    top: -2rem;
+    left: -15rem;
   }
 }
-@media (max-width: 895px) {
+@media (max-width: 1414px) {
+  .Proyectos .services-container {
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .Proyectos .services-container .button-proyectos {
+    position: relative;
+    top: -2rem;
+    left: -15rem;
+  }
+}
+@media (max-width: 800px) {
   .Proyectos .services-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .Proyectos .services h2 {
-    margin-bottom: 3rem;
+  .Proyectos .services-container .service-box {
+    height: 462px;
   }
+  .Proyectos .services-container .button-proyectos {
+    position: relative;
+    top: 14rem;
+    left: -30rem;
+  }
+}
+@media (min-width: 1880px) {
   .Proyectos .button-proyectos {
     position: relative;
-    top: 3rem;
-    left: -22rem;
+    left: -1rem;
   }
 }
 /*Secciones de Skills*/
@@ -1156,4 +1176,39 @@ section .section-wordpress-box:hover {
   background: transparent;
   transform: scale(1.03);
   border: 1px solid #eb1e1e;
+}
+
+@media (max-width: 1790px) {
+  .section .section-wordpress-container {
+    grid-template-columns: repeat(3, 4fr);
+  }
+}
+@media (max-width: 1168px) {
+  .section .section-wordpress-container {
+    position: relative;
+    left: 5rem;
+    grid-template-columns: repeat(2, 4fr);
+  }
+}
+@media (max-width: 786px) {
+  .section .heading {
+    position: relative;
+    left: 12rem;
+  }
+  .section .section-wordpress-container {
+    position: relative;
+    left: 22rem;
+    grid-template-columns: repeat(1, 4fr);
+  }
+}
+@media (max-width: 424px) {
+  .section .heading {
+    position: relative;
+    left: 4rem;
+  }
+  .section .section-wordpress-container {
+    position: relative;
+    left: 3rem;
+    grid-template-columns: repeat(1, 4fr);
+  }
 }/*# sourceMappingURL=styles.css.map */

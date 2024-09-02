@@ -90,4 +90,49 @@ section {
       }
   }
 
+@media (max-width:1790px) {
+    .section {
+        .section-wordpress-container {
+            grid-template-columns: repeat(3,4fr);
+      }
+    }
+}
+
+@media (max-width:1168px) {
+    .section {
+        .section-wordpress-container {
+            position: relative;
+            left: 5rem;
+            grid-template-columns: repeat(2,4fr);
+      }
+    }
+}
+
+@media (max-width:786px) {
+    .section {
+        .heading {
+            position: relative;
+            left: 12rem;
+        }
+        .section-wordpress-container {
+            position: relative;
+            left: 22rem;
+            grid-template-columns: repeat(1,4fr);
+      }
+    }
+}
+
+@media (max-width:424px) {
+    .section {
+        .heading {
+            position: relative;
+            left: 4rem;
+        }
+        .section-wordpress-container {
+            position: relative;
+            left: 3rem;
+            grid-template-columns: repeat(1,4fr);
+      }
+    }
+}
 

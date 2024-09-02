@@ -1,5 +1,9 @@
 /*Secciones de Proyectos*/
 
+.Proyectos-wordpress {
+    background: #161616;
+}
+
 section {
     background: $second-color;
     padding: 14rem;
@@ -79,28 +83,53 @@ section {
   }
 }
 
-@media (max-width:1000px) {
-    section {
-        padding: 10rem 3% 2rem;
-    }
+/*Responsive de Proyectos*/
 
-    .services {
-        padding: 0rem;
-    }
+@media (min-width:1414px) {
+    .Proyectos{
+        .button-proyectos {
+            position: relative;
+            top: -2rem;
+            left: -15rem;
+        }
+      }
 }
 
-@media (max-width:895px) {
+@media (max-width:1414px) {
+    .Proyectos{
+        .services-container {
+            grid-template-columns: repeat(2,2fr);
+        .button-proyectos {
+            position: relative;
+            top: -2rem;
+            left: -15rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width:800px) {
     .Proyectos{
     .services-container {
         grid-template-columns: repeat(1,1fr);
-    }
-    .services h2 {
-        margin-bottom: 3rem;        
+    .service-box {
+        height: 462px;
     }
     .button-proyectos {
         position: relative;
-        top: 3rem;
-        left: -22rem;
+        top: 14rem;
+        left: -30rem;
+      }
     }
   }
+}
+
+
+@media (min-width:1880px) {
+    .Proyectos{
+        .button-proyectos {
+            position: relative;
+            left: -1rem;
+        }
+      }
 }
