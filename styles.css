@@ -817,7 +817,15 @@ footer .copyright {
 }
 
 */
-/* Descripcion usado en todos los Proyectos */
+.titulo-para-progreso h3 {
+  color: red;
+  position: relative;
+  top: 19rem;
+  left: 15rem;
+  font-size: 10rem;
+}
+
+/* Descripcion usado en todos los Proyectos; recordar que aca se hacen las configuraciones para los proyectos */
 .Proyetos-content {
   display: flex;
   align-items: center;
