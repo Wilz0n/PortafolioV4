@@ -456,7 +456,6 @@ section {
   border-radius: 1rem;
   background: #000000;
   transition: 0.3s ease;
-  cursor: pointer;
 }
 .skills .info {
   display: flex;
