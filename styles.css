@@ -1207,7 +1207,7 @@ section .section-wordpress-box:hover {
   }
   .section .section-wordpress-container {
     position: relative;
-    left: 4rem;
+    left: 2rem;
     grid-template-columns: repeat(1, 4fr);
   }
 }/*# sourceMappingURL=styles.css.map */
