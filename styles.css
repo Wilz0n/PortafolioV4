@@ -1214,4 +1214,9 @@ section .section-wordpress-box:hover {
     position: relative;
     left: 4rem;
   }
+  .section .section-wordpress-container .section-wordpress-box-proceso {
+    position: relative;
+    bottom: 0rem;
+    left: 4.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
