@@ -1203,7 +1203,7 @@ section .section-wordpress-box:hover {
 @media (max-width: 424px) {
   .section .heading {
     position: relative;
-    left: 2rem;
+    left: 0rem;
   }
   .section .section-wordpress-container {
     position: relative;
