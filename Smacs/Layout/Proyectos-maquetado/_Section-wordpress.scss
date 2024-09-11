@@ -130,8 +130,12 @@ section {
         }
         .section-wordpress-container {
             position: relative;
-            left: 2rem;
+            left: 1rem;
             grid-template-columns: repeat(1,4fr);
+            .section-wordpress-box {
+                position: relative;
+                left: 2rem;
+            }
       }
     }
 }
